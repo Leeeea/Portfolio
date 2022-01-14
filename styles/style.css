@@ -1,0 +1,163 @@
+*{
+margin: 0px;    
+}
+body{
+    margin: 0px;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+/* ******************** */
+/* Top */
+/* nav bar*/
+nav{
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+nav>a{
+    float: right;
+    display: block;   
+    text-align: center;
+}
+/* ******************** */
+/* Main */
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25vw 24vw 24.5vw 25vw;
+    text-align: center;
+}
+@media screen and (max-width :850px){
+    main{
+        height: auto;
+        display: grid;
+        grid-template-columns: 99.9vw;
+        grid-template-rows: 25vh 25vh 25vh 25vh;
+    }
+    a{
+        font-size: 12px;
+    }
+}
+    
+main>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main>div:hover{
+    background: #017c6c;
+    transition: 0.4s;
+}
+.Graphisme:hover{
+    background-image: url(../img/kobu-agency-csJt89dL9pE-unsplash.jpg);
+    background-size: cover;
+    background-position-x: -50px;
+}
+.WebD:hover{
+    background-image: url(../img/online-web-design.jpg);
+    background-size: cover;
+    background-position-x: -50px;
+}
+.GraphismePrint:hover{
+    background-image: url(../img/mika-baumeister-gjPSrg4xSNM-unsplash.jpg);
+    background-size: cover;
+    background-position-x: -100px;
+}
+.Perso:hover:hover{
+    background-image: url(../img/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg);
+    background-size: cover;
+    background-position-x: -100px;
+}
+footer{
+    position: absolute;
+	top:0;
+}
+footer>a{
+    color: thistle;
+    float: left;
+    display: block;   
+    text-align: center;
+    
+}
+
+
+
+/* PAGES */
+.container{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 100vh;
+    text-align: left;
+    text-align: center;
+}
+
+.color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container>div{
+   margin: 20px;
+}
+.color>div{
+    height: 6vh;
+    width: 6vh;
+    border-radius: 100px;
+    margin: 5px;
+}
+.text-lmdp{
+    padding-top: 30vh;
+}
+.lmdp{
+    background-color: #e7d4d0;
+    color: black;
+}
+.img-lmdp{
+    background-image: url(../img/a.jpg);
+    background-size: cover;
+}
+
+.gar{
+    background-color: #e7e4e5;
+    color: black;
+    text-align: center;
+}
+.img-gar{
+    background-image: url(../img/59.png);
+    background-size: cover;
+}
+.text-gar{
+    padding-top: 20vh;
+}
+
+
+@media screen and (max-width :850px){
+    .container{
+        height: auto;
+        display: grid;
+        grid-template-columns: 99.9vw;
+        grid-template-rows: 50vh 50vh;
+        text-align: center;
+    }
+    .text{
+        padding-top: 0px;
+        margin: 0px;
+    }
+    .color{
+        align-items: center;
+        justify-content: center;
+    }
+    .images{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: auto auto;
+    }
+}
