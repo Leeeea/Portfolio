@@ -17,9 +17,9 @@ a{
 /* Top */
 /* nav bar*/
 nav{
-    position: -webkit-sticky;
-	position: sticky;
+    position: absolute;
 	top: 0;
+    right: 10px;
 }
 nav>a{
     float: right;
@@ -29,21 +29,10 @@ nav>a{
 /* ******************** */
 /* Main */
 main{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 25vw 24vw 24.5vw 25vw;
-    text-align: center;
-}
-@media screen and (max-width :850px){
-    main{
-        height: auto;
-        display: grid;
-        grid-template-columns: 99.9vw;
-        grid-template-rows: 25vh 25vh 25vh 25vh;
-    }
-    a{
-        font-size: 12px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
 }
     
 main>div{
@@ -51,31 +40,49 @@ main>div{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    height: 100vh;
 }
 main>div:hover{
-    background: #017c6c;
     transition: 0.4s;
 }
+.Graphisme{
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.856)), url(../img/kobu-agency-csJt89dL9pE-unsplash.jpg);
+    background-size: cover;
+}
 .Graphisme:hover{
-    background-image: url(../img/kobu-agency-csJt89dL9pE-unsplash.jpg);
+    background: linear-gradient(rgba(0, 0, 255, 0), rgba(255, 0, 0, 0)), url(../img/kobu-agency-csJt89dL9pE-unsplash.jpg);
     background-size: cover;
     background-position-x: -50px;
+}
+.WebD{
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.856)), url(../img/online-web-design.jpg);
+    background-size: cover;
 }
 .WebD:hover{
-    background-image: url(../img/online-web-design.jpg);
+    background: linear-gradient(rgba(0, 0, 255, 0), rgba(255, 0, 0, 0)), url(../img/online-web-design.jpg);
     background-size: cover;
     background-position-x: -50px;
 }
+.Perso{
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.856)), url(../img/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg);
+    background-size: cover;
+}
+.Perso:hover{
+    background: linear-gradient(rgba(0, 0, 255, 0), rgba(255, 0, 0, 0)), url(../img/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg);
+    background-size: cover;
+    background-position-x: -50px;
+}
+.GraphismePrint{
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.856)), url(../img/mika-baumeister-gjPSrg4xSNM-unsplash.jpg);
+    background-size: cover;
+}
 .GraphismePrint:hover{
-    background-image: url(../img/mika-baumeister-gjPSrg4xSNM-unsplash.jpg);
+    background: linear-gradient(rgba(0, 0, 255, 0), rgba(255, 0, 0, 0)), url(../img/mika-baumeister-gjPSrg4xSNM-unsplash.jpg);
     background-size: cover;
-    background-position-x: -100px;
+    background-position-x: -50px;
 }
-.Perso:hover:hover{
-    background-image: url(../img/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg);
-    background-size: cover;
-    background-position-x: -100px;
-}
+
 footer{
     position: absolute;
 	top:0;
@@ -92,11 +99,9 @@ footer>a{
 
 /* PAGES */
 .container{
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh;
-    text-align: left;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .color{
@@ -104,9 +109,7 @@ footer>a{
     align-items: center;
     justify-content: center;
 }
-.container>div{
-   margin: 20px;
-}
+
 .color>div{
     height: 6vh;
     width: 6vh;
@@ -114,15 +117,21 @@ footer>a{
     margin: 5px;
 }
 .text-lmdp{
-    padding-top: 30vh;
+    text-align: center;
+    padding-right: 50px;
+}
+.PLmdp{
+    margin: 30px 40px 20px auto;
 }
 .lmdp{
     background-color: #e7d4d0;
     color: black;
 }
 .img-lmdp{
-    background-image: url(../img/a.jpg);
-    background-size: cover;
+    max-width: 100%;
+}
+.img-pm{
+    max-width: 100%;
 }
 
 .gar{
@@ -138,13 +147,19 @@ footer>a{
     padding-top: 20vh;
 }
 
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2>img{
+   max-width: 50%;
+}
 
-@media screen and (max-width :850px){
+
+@media screen and (max-width :900px){
     .container{
-        height: auto;
-        display: grid;
-        grid-template-columns: 99.9vw;
-        grid-template-rows: 50vh 50vh;
+        flex-direction: column;
         text-align: center;
     }
     .text{
@@ -160,4 +175,26 @@ footer>a{
         grid-template-columns: 100vw;
         grid-template-rows: auto auto;
     }
+    main{
+        flex-direction: column;
+     }
+     a{
+         font-size: 12px;
+     }
+     main>div{
+         height: 25vh;
+     }
+     .text-lmdp{
+         text-align: center;
+         padding-right: 0px;
+     }
+     .PLmdp{
+        margin: 30px;
+    }
+}
+
+
+
+.back{
+    background-color: aqua;
 }
