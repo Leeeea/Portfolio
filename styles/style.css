@@ -84,16 +84,12 @@ main>div:hover{
 }
 
 footer{
-    position: absolute;
-	top:0;
-}
-footer>a{
-    color: thistle;
-    float: left;
-    display: block;   
+    padding: 20px;
     text-align: center;
-    
+    font-size: 10px;
+
 }
+
 
 
 
@@ -128,9 +124,6 @@ footer>a{
     color: black;
 }
 .img-lmdp{
-    max-width: 100%;
-}
-.img-pm{
     max-width: 100%;
 }
 
@@ -169,6 +162,7 @@ footer>a{
     .color{
         align-items: center;
         justify-content: center;
+        margin: 30px;
     }
     .images{
         display: grid;
@@ -191,6 +185,11 @@ footer>a{
      .PLmdp{
         margin: 30px;
     }
+    .img-gp{
+        max-width: 100%;
+    }
+    
+    
 }
 
 
