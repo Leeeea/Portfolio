@@ -1,109 +1,173 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webdesign / Dev</title>
-           <!-- icon library -->
+    <title>Sites web & webdesigne</title>
+
     <!-- link for the icons -->
     <link rel="icon" type="image/png" href="../img/TigreJaponais.jpg" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+   <!-- link for the icons -->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../styles/style.css">
     
 </head>
+
 <style>
-    body{
-        background-color: #000;
-        text-align: center;
+    /* contener */
+    .project {
+        width: 80vw;
+        margin: auto;
     }
-    div{
-        width: 100vw;
+
+    .contener_project {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 5.0rem;
     }
-    .gite{
-        background-color: #f3eee9;
-        color: black;
-        padding-top: 50px;
+
+    /* text */
+    .txt {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
-    p{
-        padding:10px;
+
+    .button {
+        background-color: var(--white);
+        color: var(--background);
+        margin: auto 5px auto auto;
     }
-    .resto{
-        background-color: #282828;
-        color: rgb(255, 255, 255);
-        padding: 90px 0px 20px 0px;
+
+    /* img */
+    img {
+        max-width: 45vw;
     }
-    .fauxcils{
-        background-color: #282828;
-        color: rgb(238, 227, 216);
-        padding-top: 50px;
+
+    /************** RESPONSIVE **************/
+    @media screen and (max-width :900px) {
+        .project {
+            flex-direction: column;
+            gap: 1.0rem;
+        }
+
+        img {
+            max-width: 70vw;
+        }
+
+        .title_expl {
+            text-align: center;
+        }
+
+        a {
+            margin: 2px;
+        }
     }
-    
-@media screen and (max-width :850px){
-    div{
-        width: 100%;
-       text-align: center;
-    }
-    .gite{
-        padding-top: 0px;
-    }
-    .resto{
-        padding: 0px;
-    }
-    .fauxcils{
-        padding: 0px;
-    }
-    p{
-        padding:10px 20px auto 20px ;
-        margin-bottom: 5vh;
-    }
-    h2{
-        margin-top: 10vh;
-    }
-    .dark{
-        color: black;
-    }
-}
 </style>
+
 <body>
-    <nav>
-        <a class="dark" href="https://www.instagram.com/l3artiste/" target="blank"><i class="bi bi-instagram"></i></a>
-        <a href="contact.html" class="dark">Contact</a>
-        <a href="../index.html" class="dark">Accueil</a>
-    </nav>
-
-    <!-- main -->
-    <div class="fauxcils">
-        <h2>Site de vente en ligne</h2>
-        <p>Création d'une Template pour un site de vente en ligne de faux-cils. Réalisation de la maquette du site sous Figma. Création du site sous Prestashop.</p>
-        <a href="https://www.lamaisondepoupeecosmetics.com/" target="blank"> Site www.lamaisondepoupeecosmetics.com</a>
-
-        <img src="../img/lmdp site.png" alt="" width="100%">
+    <div class="title">
+        <h1>Mes Réalisations</h1>
+        <p>
+            Voici un petit aperçu de sites web réalisés en HTML et CSS, sous prestashop et Wordpress.
+        </p>
     </div>
-    <div class="gite">
-        <h2>Site de reservation - Gîte</h2>
-        <p>Création d'une Template pour un gîte au cœur de la montagne alsacienne. Réalisation de la maquette du site sous Figma. Création du site sous Wordpress.</p>
-        <p>Site en construction</p>
+    <div class="contener_project">
+        <div class="project flex">
+            <img src="../img/lamaisondepoupéecosmetics.png">
+            <div class="txt">
+                <div class="title_expl">
+                    <h2>La maison de poupée cosmetics</h2>
+                    <h3>Site de vente en ligne</h3>
+                </div>
 
-        <img src="../img/gite.png" alt="" width="100%">
+                <p>
+                    J'ai eu pour mission de créer un site sous Prestashop de vente en ligne pour des faux cils. J'ai dans un premier temps configurer l'ensemble des fonctionnalités du site, puis j'ai réalisé des designs, des bannières et des icons sur Photoshop et Illustrator. 
+                </p>
+                <div class="links">
+                    <a href="www.lamaisondepoupeecosmetics.com" target="_blank" class="button">
+                        <i class="ri-link"></i>
+                        Lien
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="project flex">
+            <img src="../img/sitetemplate.png">
+            <div class="txt">
+                <div class="title_expl">
+                    <h2>Portfolio</h2>
+                    <h3>Template</h3>
+                </div>
+
+                <p>
+                    Réalisation d'un site de type Portfolio sous forme de template ajustable et modifiable au niveau des textes et images. Le site a été réalisé en HTML et en CSS. J'ai réalisé le design sur Figma et j'ai codé le site par la suite. 
+                </p>
+                <div class="links">
+                    <a href="https://leeeea.github.io/portfolio-template/index.html" target="_blank" class="button">
+                        <i class="ri-link"></i>
+                        Lien
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="project flex">
+            <img src="../img/gite.png">
+            <div class="txt">
+                <div class="title_expl">
+                    <h2>Site de reservation</h2>
+                    <h3>Webdesign</h3>
+                </div>
+
+                <p>
+                    Réalisation d'une maquette sous Figma d'un site réservation pour des gîtes dans la vallée de Masevaux.
+                </p>
+                <div class="links">
+                    <a href="https://www.figma.com/proto/aYb0k5o75bUcSQ3wpZQ4Zu/G%C3%AEte-Hirtenberg-%2F-Stahlberg?scaling=scale-down-width&page-id=0%3A1&node-id=2%3A7" target="_blank" class="button">
+                        <i class="ri-link"></i>
+                        Lien
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="project flex">
+            <img src="../img/linktr.png">
+            <div class="txt">
+                <div class="title_expl">
+                    <h2>LinkTr template</h2>
+                    <h3>Liens Réseaux sociaux</h3>
+                </div>
+
+                <p>
+                    Site de répertoire de liens dans le style du site "linktr". Le site a été réalisé en HTML et en CSS. C'est une template où les liens, images icons et textes sont modifiables.
+                </p>
+                <div class="links">
+                    <a href="https://leeeea.github.io/LinkTR/" target="_blank" class="button">
+                        <i class="ri-link"></i>
+                        Lien
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
     </div>
-    <div class="resto">
-        <h2>Site pour Restaurant - Petite Venise</h2>
-        <p>Création d'un Template comprennent, une page d'accueil, une page pour la carte du moment, une page de contact. Réalisation de la maquette du site sous Figma. Création du site sous Wordpress.</p>
-        <a href="https://www.restaurant-petite-venise.fr/" target="blank"> Site www.restaurant-petite-venise.fr</a>
-        <img src="../img/pv.png" alt="" width="100%">
-    </div>
+
     <footer>
-        Portfolio de Léa Platel Graphiste & Webdesigner © 2022 - Tous droits réservés.
+        <div>
+            <a href="../index.html">Accueil</a>
+            <a href="../pages/contact.html">Contact</a>
+        </div>
+        
+        <p> Portfolio de Léa Platel Graphiste & Webdesigner © 2022 - Tous droits réservés.</p>
     </footer>
-       
-
-    
 </body>
 </html>
