@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="FR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Créations, Prints ...</title>
+    <link rel="stylesheet" href="">
+               <!-- icon library -->
+               <!-- link for the icons -->
     <link rel="icon" type="image/png" href="../img/TigreJaponais.jpg" />
-
     <!-- link for the icons -->
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-   <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
 </head>
 <style>
+    *{
+margin: 0px;    
+}
+body{
+    margin: 0px;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+nav{
+    padding: 20px;
+    text-align: right;
+}
     .cont{
         display: grid;
         grid-gap: 3px;
@@ -22,52 +40,208 @@
         grid-auto-rows: 40vh;
         grid-template-columns: repeat(auto-fill, 40vh);
     }
-    .cont>div{
+    .cont>.div1{
         grid-row: span 1;
         grid-column: span 1;
     }
+
+    .cont>.div2{
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+
+    .cont>.div3{
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+
     .grap{
         margin: 10vh;
     }
-    img{
-        max-width: 40vh;
-    } 
+    .cartlmdp{
+        background-image: url(../img/a.jpg);
+        background-size: cover;
+    }
+    .log4{
+        background-image: url(../img/Logo-04.png);
+        background-size: cover;
+    }
+    .am{
+        background-image: url(../img/am.png);
+        background-size: cover;
+    }
+    .kk{
+        background-image: url(../img/TEA.png);
+        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .fels{
+        background-image: url(../img/feelsgood.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .cal1{
+        background-image: url(../img/CALENDRIER1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .cal2{
+        background-image: url(../img/Cal2.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .pack1{
+        background-image: url(../img/02.jpg);
+        background-size: cover;
+    }
+    .pack2{
+        background-image: url(../img/022.jpg);
+        background-size: cover;
+    }
+    .fob{
+        background-image: url(../img/fob.png);
+        background-size: cover;
+    }
+    .chris{
+        background-image: url(../img/logochris.png);
+        background-size: cover;
+    }
+    .cartlm{
+        background-image: url(../img/Business_Card_Mockup_023.jpg);
+        background-size: cover;
+    }
+    .logogpm{
+        background-image: url(../img/img7.jpg);
+        background-size: cover;
+    }
+
+    .aaa{
+        background-image: url(../img/59.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .fance{
+        background-image: url(../img/fanc.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .lmdp{
+        background-image: url(../img/lmdp.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .fade{
+        background-image: url(../img/cart.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .bul{
+        background-image: url(../img/bul.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .car{
+        background-image: url(../img/car.jpg);
+        background-size: cover;
+    }
+    .pau1{
+        background-image: url(../img/Logo2\ -\ Enseigne.jpg);
+        background-size: cover;
+    }
+    .pau2{
+        background-image: url(../img/Paus_Luxe3.png);
+        background-size: cover;
+    }
+    .che{
+        background-image: url(../img/che.png);
+        background-size: cover;
+    }
+    .lo{
+        background-image: url(../img/84556.jpg);
+        background-size: cover;
+    }
+    .d1{
+        background-image: url(../img/d1.jpg);
+        background-size: cover;
+    }
+    .d2{
+        background-image: url(../img/D2.jpg);
+        background-size: cover;
+    }
+    .d3{
+        background-image: url(../img/D3.jpg);
+        background-size: cover;
+    }
+  
 </style>
 <body>
+     <!-- top -->
+     <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.behance.net/8a1a70e7" target="blank"><i class="bi bi-behance"></i></a>      
+    </nav>
     <div class="grap">
         <div class="cont">
-            <img src="../img/lmdp Carte.jpg" alt="">
-            <img src="../img/lmdp Pack3.jpg" alt="">
-            <img src="../img/lmdp Pack1.jpg" alt="">
-            <img src="../img/lmpd Pack2.jpg" alt="">
-            <img src="../img/lmdp.png" alt="">
-            <img src="../img/LaMaisonDePoupéeCosmetics.jpg" alt="">
-            <img src="../img/bulletin Sentheim.jpg" alt="">
-            <img src="../img/Marquage.jpg" alt="">
-            <img src="../img/cart.png" alt="">
-            <img src="../img/fanc.jpg" alt="">
-            <img src="../img/che.png" alt="">
-            <img src="../img/fob.png" alt="">
-            <img src="../img/gpm cartes.jpg" alt="">
-            <img src="../img/gpm Logo.jpg" alt="">
-            <img src="../img/logochris.png" alt="">
-            <img src="../img/Logo2 - Enseigne.jpg" alt="">
-            <img src="../img/Paus_Luxe3.png" alt="">
-            <img src="../img/PausEnseigne1.png" alt="">
-            <img src="../img/d1.jpg" alt="">
-            <img src="../img/D2.jpg" alt="">
-            <img src="../img/D3.jpg" alt="">
+            <div class="cartlmdp div1"></div>
+            <div class="cartlm div1"></div>
+            <div class="pack2 div1"></div>
+            <div class="pack1 div1"></div>
+            <div class="lmdp div1"></div>
+            
+           
+            <div class="log4 div1"></div>
+
+            
+            <div class="kk div1"></div>
+
+            <div class="fels div1"></div>
+           
+            <div class="am div1"></div>
+
+            <div class="cal2 div1"></div>
+
+
+           
+            <div class="logogpm div1"></div>
+            <div class="aaa div1"></div>
+            
+            
+            <div class="car div1"></div>
+            
+            <div class="fob div1"></div>
+            
+            <div class="chris div1"></div>
+            <div class="pau1 div1"></div>
+            <div class="fance div1"></div>
+           
+           
+           
+    
+            
+            <div class="fade div1"></div>
+            <div class="bul div1"></div>
+            
+            <div class="che div1"></div>
+           
+     <!-- 
+            <div class="pau2 div1"></div> -->
+            
+            <div class="d1 div1"></div>
+            <div class="d2 div1"></div>
+            <div class="d3 div1"></div>
+            
         </div>
     </div>
-    <footer>
-        <div>
-            <a href="../index.html">Accueil</a>
-            <a href="../pages/contact.html">Contact</a>
-        </div>
-        <p>
-            Portfolio de Léa Platel Graphiste & Webdesigner © 2022 - Tous droits réservés.  
-        </p>
-    </footer>
+    
     
 </body>
 </html>
